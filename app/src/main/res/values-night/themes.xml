@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EmergencyApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+    </style>
+    <style name="CornerCut" parent="">
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeTopLeft">20%</item>
+        <item name="cornerSizeTopRight">20%</item>
+        <item name="cornerSizeBottomLeft">20%</item>
+        <item name="cornerSizeBottomRight">20%</item>
+
+    </style>
+</resources>

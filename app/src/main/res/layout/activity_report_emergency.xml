@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report_emergency">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:text="REPORT EMERGENCY"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/black_middle"
+        android:hint="Enter Emergency Type"
+        android:padding="5dp"
+        android:textColorHint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/black_middle"
+        android:hint="First or Third Party Reporter"
+        android:padding="5dp"
+        android:textColorHint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/black_middle"
+        android:gravity="top"
+        android:hint="Short Description of Emergency"
+        android:inputType="textMultiLine"
+        android:lines="7"
+        android:padding="10dp"
+        android:textColorHint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="381dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3">
+
+        <ImageView
+            android:id="@+id/imgGallery"
+            android:layout_width="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="50dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/camera_24" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload"
+        android:layout_width="140dp"
+        android:layout_marginStart="20dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/but_back"
+        android:text="upload photo"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/report_now"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/but_back"
+        android:text="report now"
+        android:textColor="@color/white"
+        android:layout_marginEnd="20dp"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/upload"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
